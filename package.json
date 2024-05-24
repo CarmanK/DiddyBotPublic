@@ -1,0 +1,27 @@
+{
+  "name": "diddybot-public",
+  "version": "0.1.0",
+  "description": "A public, slimmed-down version of the DiddyBot Discord bot.",
+  "main": "index.js",
+  "scripts": {
+    "pullAndRun": "git stash && git pull && npm install && node .",
+    "run": "node .",
+    "lint": "npx eslint ."
+  },
+  "author": "DiddyBop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarmanK/DiddyBotPublic"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.8.1",
+    "discord.js": "^14.15.2"
+  },
+  "devDependencies": {
+    "@discordjs/rest": "^2.3.0",
+    "discord-api-types": "^0.37.83",
+    "eslint": "^8.49.0",
+    "eslint-plugin-jsdoc": "^46.8.2"
+  }
+}
