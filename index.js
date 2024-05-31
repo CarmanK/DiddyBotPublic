@@ -136,7 +136,8 @@ client.on('interactionCreate', async interaction => {
 client.on('messageCreate', async (message) => {
     try {
         if (message.content.search(/https?:\/\/(twitter|x)\.com/m) !== -1) {
-            message.reply(message.content.replace(/https?:\/\/(twitter|x)\.com/m, 'https://fxtwitter.com'));
+            await message.reply(`${message.author}: ${message.content.replace(/https?:\/\/(twitter|x)\.com/m, 'https://fxtwitter.com')}`);
+            await message.delete();
         }
     }
     catch(err) {
